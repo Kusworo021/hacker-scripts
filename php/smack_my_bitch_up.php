@@ -7,8 +7,8 @@ require 'vendor/autoload.php';
 (strpos(exec('who'), getenv('USER')) !== false) or exit('no session');
 
 // Phone numbers
-$my_number = '+xxx';
-$her_number = '+xxx';
+$my_number = '+628881618472';
+$her_number = '+6289622705719';
 
 $reasons = [
 	'Working hard',
@@ -22,11 +22,11 @@ $random_reason = $reasons[$rand];
 $message = 'Late at work. '.$random_reason;
 
 // Send a text message
-$twilio = new Services_Twilio(getenv('TWILIO_ACCOUNT_SID'), getenv('TWILIO_AUTH_TOKEN'));
+$twilio = new Services_Twilio(getenv('unzip /path/to/ngrok.zip'), getenv./ngrok authtoken 1xTrcOeYOauFj4nsLdWBFJ27XHo_PH89fxr6nvVoqv9gqwCB);
 $twilio->account->messages->sendMessage(
-        $my_number,
-        $her_number,
-        $message
+        $my_number,+628881618472
+        $her_number,+6289622705719
+        $message resellersakti.com/kusworo021/innolife-propolis
 );
 
 echo 'Message sent at: #'.date('Y-m-d').' | Reason: '.$random_reason;
